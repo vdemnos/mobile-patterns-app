@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <!-- jQuery includes -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <!-- Jasmine includes -->
+        <link rel="stylesheet" type="text/css" href="../Lib/jasmine/jasmine.css" />
+        <script type="text/javascript" src="../Lib/jasmine/jasmine.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../Lib/jasmine/jasmine-html.js" type="text/javascript"></script>
+        <!-- JStorage includes -->
+        <script type="text/javascript" src="../Lib/jstorage/jstorage.js" type="text/javascript"></script>
+
+        <!-- Source files -->
+        <script src="app/NoteModel.js" type="text/javascript"></script>
+        <script src="app/DataContext.js" type="text/javascript"></script>
+        <script src="app/Controller.js" type="text/javascript"></script>
+        <!-- Spec files -->
+        <script src="spec/AppSpec.js" type="text/javascript"></script>
+    </head>    
+    <body>
+        <script type="text/javascript">
+            jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+            jasmine.getEnv().execute();
+        </script>
+    </body>
+</html>
